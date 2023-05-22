@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/giohang.css">
+    <title>Giỏ Hàng</title>
+</head>
+<body>
+    <div id="main">
+           <!-- Begin: Header -->
+           <div id="header">
+            <!--Begin: Nav-Search -->
+            <!-- Begin:Navbar-PC -->
+            <nav class="navbar bg-body-tertiary color-header justify-content-center header-content navbar-pc ">
+                <div class="container-fluid" id="header-bar">
+                  <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                  <div class="header-icon">
+                    <li class="user">
+                      
+                        <i class="fa-solid fa-user" ></i>
+                        
+                        <ul class="sub-nav">
+                          <li class="item-user"><a href="./dangnhap.html">Đăng nhập</a></li>
+                          <li class="item-user"><a href="./dangki.html">Đăng kí</a></li>
+                      </ul>
+                    </li>
+                    
+                      <a href="./giohang.html" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                  </div>
+                </div>
+            </nav>
+            <!-- End:Navbar-PC -->
+    
+            <!-- Begin:Navbar-Mobile -->
+            <nav class="navbar  navbar-mb ">
+              <div class="container-fluid">
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+                
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="lietkesp.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lietkesp.html">Cá Cảnh</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lietkesp.html">Thủy sinh</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lietkesp.html">Bể Cá</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lietkesp.html">Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gioithieuduan.html">Giới thiệu dự án</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="dangki.html">Đăng kí</a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="d-flex" role="search" style="margin-bottom: 12px;">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+            <!-- End:Navbar-Mobile -->
+    
+              <!-- End :Nav-Search -->
+              <!-- Begin: List-Item_header -->
+              <div class="container-fluid list-item-header">
+                <ul class="nav nav-tabs">
+                    <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cá cảnh</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="lietkesp.html">Cá Nước Mặn</a>
+                            <ul class="sub-nav">
+                                <li><a href="lietkesp.html">Cá nẻ xanh </a>
+                                <li><a href="lietkesp.html">Cá hề </a>
+                             </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="lietkesp.html">Cá Nước Ngọt</a>
+                          <ul class="sub-nav">
+                            <li><a href="lietkesp.html">Cá Bảy Màu</a>
+                            <li><a href="lietkesp.html">Neon Tetra </a>
+                         </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="lietkesp.html">Cá Betta</a></li>  
+                      </ul>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Thủy Sinh</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="lietkesp.html">San hô chén đá</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">San hô Scoly</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Hải quỳ tím</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Hải quỳ vú</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">San hô tròn</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">San hô trứng mực</a></li>
+                        </ul>
+                      </li>
+    
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Các Loài Khác</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="lietkesp.html">Cua Matano</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Cua Panther</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Axolot</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Procambarus</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Destructor</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Pro Ghost</a></li>
+                        </ul>
+                      </li>
+    
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Bể Cá</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="lietkesp.html">Bể cá treo tường</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Bể có thủy sinh</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Bể cá để bàn</a></li>
+                        </ul>
+                      </li>
+                     
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Phụ Kiện</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="lietkesp.html">Thức ăn cho cá</a></li>
+                          <li><a class="dropdown-item" href="lietkesp.html">Hệ thống bơm</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="gioithieuduan.html">Giới thiệu dự án</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- End: List-Item_header -->
+        </div>
+            <!-- End: Header -->
+
+        <div id="content" style="padding-top: 62px;margin-bottom: 96px;">
+          <div id="cart" >
+            <div class="quantity"><h3 style="text-align: center;">Giỏ Hàng </h3></div>
+
+           
+            
+
+            <!-- Begin :List -->
+            <div class="list-product-item">
+
+              <div class="header-cart">
+                <div class="row">
+                  <div class="row col-4">Sản phẩm</div>
+                  <div class="row col-3">Giá</div>
+                  <div class="row col-3">Số lượng</div>
+                  <div class="row col-2">Tổng cộng</div>
+                </div>
+              </div>
+
+              <!-- Begin:Item 1 -->
+              <div class="row " style="margin-top: 12px;border-bottom: 1px solid #bebebe;">
+                <div class="row col-4">
+                  <div class="item row">
+                    <div class="img-item col-6">
+
+                      <img src="./img/product_SanHoDiem.jpg" alt="">
+                    </div>
+                    <div class="tittle-item col-6" style="padding-left: 0px;">
+                      <p>Multicolor/Galaxy Koi Plakat -13 weeks Old
+                        Betta Squad USA, LLC</p>
+
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="row col-3" style="padding-left: 0px;" id="price1">3.000.000 đ</div>
+                <div class="row col-3">
+                  <div class="quanity-select">
+                    <button type="button" id="decrease-btn1">-</button>
+                    <input class="text-quanity" id="value1" style="text-align: center;" type="text" value="1">
+                    <button type="button" id="increase-btn1">+</button>
+                  </div>
+                </div>
+                <div class="row col-2" id="total-price1">3.000.000 đ</div>
+              </div>
+              <!-- Begin :Item 2 -->
+              <div class="row">
+                <div class="row col-4">
+                  <div class="item row">
+                    <div class="img-item col-6">
+
+                      <img src="./img/product_Cua_Matano.jfif" alt="">
+                    </div>
+                    <div class="tittle-item col-6" style="padding-left: 0px;">
+                      <p>Cua Manato</p>
+
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="row col-3" style="padding-left: 0px;" id="price2">420.000 đ</div>
+                <div class="row col-3">
+                  <div class="quanity-select">
+                    <button type="button" id="decrease-btn2">-</button>
+                    <input  class="text-quanity" id="value2" style="text-align: center;" type="text" value="1">
+                    <button type="button" id="increase-btn2">+</button>
+                  </div>
+                </div>
+                <div class="row col-2" id="total-price2">420.000 đ</div>
+              </div>
+            </div>
+            <!-- End  :List -->
+
+            <div class=" row cart-footer" style="margin-top: 62px;">
+
+              <div class="col-8 cart-note">
+                <label class="label-note">Ghi chú</label>
+                <textarea name="ghichu"  cols="120" rows="5"></textarea>
+              </div>
+              <div class=" col-4 cart-checkout">
+                <p class="Total">Tổng cộng <span id="final-price">6.000.000đ</span></p>
+                
+                  <div  class="thanhtoan " style="margin-right: 0px;" >
+                    <a href="lietkesp.html" style="text-decoration: none;color: white;font-weight: 600;"> Thanh Toán ngay</a>
+                  </div>
+                  <div  class="ttmuahang " style="margin-top: 12px;" >
+                    <a href="lietkesp.html" style="text-decoration: none;color: #000;font-weight: 600;">Tiếp tục mua hàng</a> 
+                    </div>
+              
+              
+              </div>
+            </div>
+           
+
+           </div>
+        </div>
+
+       
+        
+        <!--Begin: Footer -->
+        <div id="footer" class="color-header">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+          <ul class="social_icon">
+            <li>
+              
+              <a href="https://www.facebook.com/hhung226/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hungvvvp/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+           
+          </ul>
+          <ul class="menu-footer">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="lietkesp.html">Dịch vụ</a></li>
+            <li><a href="gioithieuduan.html">Liên hệ</a></li>
+            <li><a href="gioithieuduan.html">Giới thiệu dự án</a></li>
+          </ul>
+          <p>@2023 Hưng </p>
+
+        </div>
+            
+  
+          <!-- End:Footer -->
+    </div>
+    <script>
+      // tong
+      const value1 = document.getElementById('value1')
+      const btnDecrease1 = document.getElementById('decrease-btn1');
+      const btnIncrease1 = document.getElementById('increase-btn1');
+      const value2 = document.getElementById('value2')
+      const btnDecrease2 = document.getElementById('decrease-btn2');
+      const btnIncrease2 = document.getElementById('increase-btn2');
+
+      let price1 = document.getElementById('price1');
+      let price2 = document.getElementById('price2');
+      const totalPrice1 = document.getElementById('total-price1');
+      const totalPrice2 = document.getElementById('total-price2');
+
+      const VND = new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND',
+      });
+
+      //calculate final price
+      let finalPrice = document.getElementById('final-price');
+      finalPrice.innerText = VND.format((parseFloat(price1.innerText) * value1.value * 1000000)+(parseFloat(price2.innerText) * value2.value * 1000));
+      
+      btnDecrease1.onclick = function() {
+        if ( value1.value > 1)
+          value1.value--;
+        value1.innerText; 
+        
+        // calculate price 1 product
+        totalPrice1.innerText = VND.format(parseFloat(price1.innerText) * value1.value * 1000000);
+        // update final price when click button decrease or increase
+        finalPrice.innerText = VND.format((parseFloat(price1.innerText) * value1.value * 1000000)+(parseFloat(price2.innerText) * value2.value * 1000));
+      }
+      btnIncrease1.onclick = function() {
+        value1.value++; 
+        value1.innerText;
+        
+        // calculate price 1 product
+        totalPrice1.innerText = VND.format(parseFloat(price1.innerText) * value1.value * 1000000);
+
+        // update final price when click button decrease or increase
+        finalPrice.innerText = VND.format((parseFloat(price1.innerText) * value1.value * 1000000)+(parseFloat(price2.innerText) * value2.value * 1000));
+      }
+      
+      btnDecrease2.onclick = function() {
+        if ( value2.value > 1)
+          value2.value--;
+        value2.innerText; 
+        
+        // calculate price 1 product
+        totalPrice2.innerText = VND.format(parseFloat(price2.innerText) * value2.value * 1000);
+
+        // update final price when click button decrease or increase
+        finalPrice.innerText = VND.format((parseFloat(price1.innerText) * value1.value * 1000000)+(parseFloat(price2.innerText) * value2.value * 1000));
+      }
+      btnIncrease2.onclick = function() {
+        value2.value++; 
+        value2.innerText;
+
+        // calculate price 1 product
+        totalPrice2.innerText = VND.format(parseFloat(price2.innerText) * value2.value * 1000);
+
+        // update final price when click button decrease or increase
+        finalPrice.innerText = VND.format((parseFloat(price1.innerText) * value1.value * 1000000)+(parseFloat(price2.innerText) * value2.value * 1000));
+      } 
+
+    </script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

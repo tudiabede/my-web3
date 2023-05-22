@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/lietkesp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <title>Liệt kê sản phẩm</title>
+</head>
+<body>
+       <div id="main">
+        <!-- Begin: Header -->
+      <div id="header">
+        <!--Begin: Nav-Search -->
+        <!-- Begin:Navbar-PC -->
+        <nav class="navbar bg-body-tertiary color-header justify-content-center header-content navbar-pc ">
+            <div class="container-fluid" id="header-bar">
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <div class="header-icon">
+                <li class="user">
+                  
+                    <i class="fa-solid fa-user" ></i>
+                    
+                    <ul class="sub-nav">
+                      <li class="item-user"><a href="./dangnhap.html">Đăng nhập</a></li>
+                      <li class="item-user"><a href="./dangki.html">Đăng kí</a></li>
+                  </ul>
+                </li>
+                
+                  <a href="./giohang.html" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+              </div>
+            </div>
+        </nav>
+        <!-- End:Navbar-PC -->
+
+        <!-- Begin:Navbar-Mobile -->
+        <nav class="navbar  navbar-mb ">
+          <div class="container-fluid">
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="lietkesp.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lietkesp.html">Cá Cảnh</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lietkesp.html">Thủy sinh</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lietkesp.html">Bể Cá</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lietkesp.html">Phụ kiện</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gioithieuduan.html">Giới thiệu dự án</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dangki.html">Đăng kí</a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex" role="search" style="margin-bottom: 12px;">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <!-- End:Navbar-Mobile -->
+
+          <!-- End :Nav-Search -->
+          <!-- Begin: List-Item_header -->
+          <div class="container-fluid list-item-header">
+            <ul class="nav nav-tabs">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cá cảnh</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="lietkesp.html">Cá Nước Mặn</a>
+                        <ul class="sub-nav">
+                            <li><a href="lietkesp.html">Cá nẻ xanh </a>
+                            <li><a href="lietkesp.html">Cá hề </a>
+                         </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="lietkesp.html">Cá Nước Ngọt</a>
+                      <ul class="sub-nav">
+                        <li><a href="lietkesp.html">Cá Bảy Màu</a>
+                        <li><a href="lietkesp.html">Neon Tetra </a>
+                     </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="lietkesp.html">Cá Betta</a></li>  
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Thủy Sinh</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="lietkesp.html">San hô chén đá</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">San hô Scoly</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Hải quỳ tím</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Hải quỳ vú</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">San hô tròn</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">San hô trứng mực</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Các Loài Khác</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="lietkesp.html">Cua Matano</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Cua Panther</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Axolot</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Procambarus</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Destructor</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Pro Ghost</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Bể Cá</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="lietkesp.html">Bể cá treo tường</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Bể có thủy sinh</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Bể cá để bàn</a></li>
+                    </ul>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Phụ Kiện</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="lietkesp.html">Thức ăn cho cá</a></li>
+                      <li><a class="dropdown-item" href="lietkesp.html">Hệ thống bơm</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gioithieuduan.html">Giới thiệu dự án</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- End: List-Item_header -->
+    </div>
+        <!-- End: Header -->
+
+
+        <!-- Begin : Content -->
+        <div id="content" >
+
+         <!-- Begin :Slider -->
+         <div id="slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/slider_sale_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/slider_sale_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/slider_sale_3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/slider_sale_4.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- End :Slider -->
+
+          <!-- Begin :catetory -->
+            <div id="catetory">
+        <div class="list-item">
+            <div class="container">
+                
+                <div class="row">
+
+                  <div class="item col-3">
+                    <a href="#banchay"><img src="./img/canuocngot.jfif" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">Cá nước ngọt</p>
+                  </div>
+                    
+
+                  <div class="item col-3">
+                    <a href="#thuysinh"><img src="./img/canexanh.jfif" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">Cá nước mặn</p>
+                  </div>
+
+                  <div class="item col-3">
+                    <a href="#cua"><img src="./img/tomcanh.jfif" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">Tôm cảnh</p>
+                  </div>
+
+                       <div class="item col-3">
+                    <a href="#cua"><img src="./img/cuacanh.jpg" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">Cua cảnh</p>
+                  </div>
+
+                  <div class="item col-3">
+                    <a href="#thuysinh"><img src="./img/sanho_catetory.jpg" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">San hô</p>
+                  </div>
+
+                  <div class="item col-3">
+                    <a href="thuysinh"><img src="./img/haiquy.jpg" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">Hải quỳ</p>
+                  </div>
+
+                  <div class="item col-3">
+                    <a href="#beca"><img src="./img/beca.jpg" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">Bể cá</p>
+                  </div>
+
+                  <div class="item col-3">
+                    <a href="#beca"><img src="./img/hethongloc.jfif" alt="canexanh" class="img_ca_nuocman"></a>
+                          <p class="item-text">Phụ kiện</p>
+                  </div>
+                </div>
+            </div>
+                
+                    
+               
+    </div>
+            </div>
+          <!-- End :catetory -->
+
+          <!-- Begin :Product -->
+          <div id="product_section">
+            <div id="box_product">
+              <!-- Begin :LEFT -->
+              <div class="left">
+                <li  style="font-size:20px;"><strong style="color: red;"> Giá Sản Phẩm</strong></a>
+                  <ul class="nav_price_product">
+                    <div class="price"><input type="checkbox" name="GiaSP" id=""><p>Dưới 50.000 đ</p></div>
+                    <div class="price"><input type="checkbox" name="GiaSP" id=""><p>Từ 50.000 - 100.000đ</p></div>
+                    <div class="price"><input type="checkbox" name="GiaSP" id=""><p>Từ 100.000 - 200.000đ</p></div>
+                    <div class="price"><input type="checkbox" name="GiaSP" id=""><p>Từ 200.000 - 500.000đ</p></div>
+                    <div class="price"><input type="checkbox" name="GiaSP" id=""><p>Từ 500.000đ trở lên</p></div>
+                  </ul>
+                </li>
+
+              
+
+
+
+                <li  style="font-size:20px;"><strong style="color: red;">Danh Mục Sản Phẩm</strong></a>
+                  <div class="DanhMuc" style="margin-bottom: 20px;">
+
+                    <select class="select_DanhMuc" >
+                      <option value="Ca">Cá </option>
+                      <option value="saab">Tôm </option>
+                      <option value="mercedes">Cua </option>
+                      <option value="audi">Hải Quỳ</option>
+                      <option value="audi">San hô</option>
+                      <option value="audi">Phụ Kiện</option>
+                     </select>
+                  </div>
+                 
+                </li>
+
+                <div class="loc">Lọc</div>
+  
+                
+                
+                
+              </div>
+               <!-- End :LEFT -->
+
+              <!-- Begin :Rigth -->
+              <div class="right">
+            <!-- Begin :KhuyenMai -->
+               <div id="khuyenmai" class="khuyen_mai_hot" style="margin-top: 8px;">
+                  <div class="container">
+                      <div class="row " >
+                      <h3 style="color:red;"><i class="fa-solid fa-fire"></i> Khuyến Mãi Hot</h3>
+                     </div>
+                <div class="row " >
+                      <!--Begin: item1 -->
+                      <div class="item col-3">
+                        <div class="container_img">
+                          <a href="./chitiet1sp.html"><img src="./img/Crown-tail-betta_product.jpg" alt="Crwon_betta" ></a>
+                        </div>  
+                        <div class="describe_product">
+                          <p style="text-align: center;font-size: 20px;">Crown Tail Betta</p>
+                          <div class="star">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"> </i>
+                          (13)
+                          </div>
+                          <div style="padding: 4px;">   80.000 đ  <span style="text-decoration: line-through;">100.000 đ</span></div>
+                        
+                          <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                          <div class="button_buy" >
+                           <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                        </div>
+                       </div>
+                      </div>
+                       <!-- End: Item1 -->
+                       <div class="item col-3">
+                        <div class="container_img">
+                          <a href="./chitiet1sp.html"><img src="./img/plakat_betta_product.jpg" alt="Platkat_Betta" ></a>
+                        </div>  
+                        <div class="describe_product">
+                          <p style="text-align: center;font-size: 20px;">PLakat Betta</p>
+                          <div class="star">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          (130)
+                          </div>
+                          <div style="padding: 4px;"> 400.000 đ  <span style="text-decoration: line-through;">600.000 đ</span></div>
+                        
+                          <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                          <div class="button_buy" >
+                           <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="item col-3">
+                        <div class="container_img">
+                          <a href="chitiet1sp.html"><img src="./img/axolot_product.webp" alt="Axolot" ></a>
+                        </div>  
+                        <div class="describe_product">
+                          <p style="text-align: center;font-size: 20px;">Axolot</p>
+                          <div class="star">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          (20)
+                          </div>
+                          <div style="padding: 4px;">   800.000 đ  <span style="text-decoration: line-through;">1.000.000 đ</span></div>
+                        
+                          <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                          <div class="button_buy" >
+                           <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="item col-3">
+                        <div class="container_img">
+                          <a href="chitiet1sp.html"><img src="./img/cahe_product.jpg" alt="Cá hề" ></a>
+                        </div>  
+                        <div class="describe_product">
+                          <p style="text-align: center;font-size: 20px;">Cá hề</p>
+                          <div class="star">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          (42)
+                          </div>
+                          <div style="padding: 4px;"> 250.000 đ</div>
+                        
+                          <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                          <div class="button_buy" >
+                           <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                        </div>
+                       </div>
+                      </div>
+                     
+                </div>
+
+                  </div>
+                </div>
+               <!-- End :KhuyenMai -->
+
+               <div class="banner_khuyenmai">
+                <img src="./img/slider_sale_1.jpg" alt="">
+               </div>
+
+               <!-- Begin :Bán chạy -->
+               <div id="banchay" class="khuyen_mai_hot" style="margin-top: 50px;">
+                <div class="container">
+                    <div class="row " >
+                    <h3 style="color:red;"><i class="fa-solid fa-fire"></i> Bán Chạy</h3>
+                   </div>
+              <div class="row " >
+                    <!--Begin: item1 -->
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href=""><img src="./img/axolot_product.webp" alt="Axolot" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Axolot</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        (20)
+                        </div>
+                        <div style="padding: 4px;">   800.000 đ  <span style="text-decoration: line-through;">1.000.000 đ</span></div>
+                      
+                        <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                        <div class="button_buy" >
+                         <a href=""> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                     <!-- End: Item1 -->
+                     <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_SanHoDiem.jpg" alt="San hô Diêm" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">San hô diêm</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        (50)
+                        </div>
+                        <div style="padding: 4px;">3.000.000 đ</div>
+                      
+                        <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_SanHoTrungMuc.jpg" alt="cSan hô trứng mực" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">San Hô Trứng Mực</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> </i>
+                        (107)
+                        </div>
+                        <div style="padding: 4px;">  2.500.000đ <span style="text-decoration: line-through;">2.700.000đ</span></div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_BeCaThuySinh.jpg" alt="Bể Cá Thủy Sinh" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Bể cá Thủy Sinh</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> </i>
+                        (89)
+                        </div>
+                        <div style="padding: 4px;">   1.400.000 đ</div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                   
+              </div>
+
+                </div>
+              </div>  
+               <!-- End :Bán chạy -->
+
+               <div class="banner_khuyenmai">
+                <img src="./img/slider_sale_2.jpg" alt="">
+               </div>
+
+               <!-- Begin :Thủy Sinh -->
+               <div id="thuysinh" class="khuyen_mai_hot" style="margin-top: 50px;">
+                <div class="container">
+                    <div class="row " >
+                    <h3></i> Thủy Sinh</h3>
+                   </div>
+              <div class="row " >
+                    <!--Begin: item1 -->
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_HaiQuyTim.jpg" alt="Hải Quỳ Tím" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Hải Quỳ Tím</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        (6)
+                        </div>
+                        <div style="padding: 4px;">  100.000 đ <span style="text-decoration: line-through;">120.000 đ</span></div>
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                     <!-- End: Item1 -->
+                     <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_SanHoDiem.jpg" alt="San hô Diêm" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">San hô diêm</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        (50)
+                        </div>
+                        <div style="padding: 4px;">3.000.000 đ</div>
+                      
+                        <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_SanHoTrungMuc.jpg" alt="cSan hô trứng mực" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">San Hô Trứng Mực</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> </i>
+                        (107)
+                        </div>
+                        <div style="padding: 4px;">  2.500.000đ <span style="text-decoration: line-through;">2.700.000đ</span></div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_SanHoScoly.jpg" alt="San Hô Scoly" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">San hô Scoly</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> </i>
+                        (8)
+                        </div>
+                        <div style="padding: 4px;">   2.7000.000đ  <span style="text-decoration: line-through;">3.000.000đ</span></div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                   
+              </div>
+
+              
+
+                </div>
+              </div> 
+               <!-- End :Thủy Sinh -->
+
+               <div class="banner_khuyenmai">
+                <img src="./img/slider_sale_3.jpg" alt="">
+               </div>
+               <!-- Begin :Cua -->
+               <div  id="cua" class="khuyen_mai_hot" style="margin-top: 50px;">
+                <div class="container">
+                    <div class="row " >
+                    <h3 style="color:red;"><i class="fa-solid fa-fire"></i> Cua, Tôm Cảnh và Axolot</h3>
+                   </div>
+              <div class="row " >
+                    <!--Begin: item1 -->
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_Cua_Matano.jfif" alt="Cua Matano" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Cua Matano</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                        (18)
+                        </div>
+                        <div style="padding: 4px;">   420.000 đ </div>
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                     <!-- End: Item1 -->
+                     <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_Panther_Crab.jfif" alt="Cua Panther" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Cua Panther</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> </i>
+
+                       
+                        (21)
+                        </div>
+                        <div style="padding: 4px;"> 400.000 đ  <span style="text-decoration: line-through;">500.000 đ</span></div>
+                      
+                        <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/axolot_product.webp" alt="Axolot" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Axolot</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        (20)
+                        </div>
+                        <div style="padding: 4px;">   800.000 đ  <span style="text-decoration: line-through;">1.000.000 đ</span></div>
+                      
+                        <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href=""><img src="./img/Product_Procambarus.jfif" alt="Tôm Procambarus" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Tôm Procambarus</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (4)
+                        </div>
+                        <div style="padding: 4px;">   580.000 đ</div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href=""> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+               <!-- Begin :Row 2 -->
+              <div class="row " >
+                <!--Begin: item1 -->
+                <div class="item col-3">
+                  <div class="container_img">
+                    <a href="chitiet1sp.html"><img src="./img/product_ProGhost_Organe.jfif" alt="Pro Ghost Orange" ></a>
+                  </div>  
+                  <div class="describe_product">
+                    <p style="text-align: center;font-size: 20px;">Pro Ghost Orange</p>
+                    <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    (1)
+                    </div>
+                    <div style="padding: 4px;">   800.000 đ </div>
+                   
+                    <div class="button_buy" >
+                     <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                  </div>
+                 </div>
+                </div>
+                 <!-- End: Item1 -->
+                 <div class="item col-3">
+                  <div class="container_img">
+                    <a href="chitiet1sp.html"><img src="./img/product_Procambarus_alleni.jfif" alt="Procambarus alleni" ></a>
+                  </div>  
+                  <div class="describe_product">
+                    <p style="text-align: center;font-size: 20px;"> Procambarus Alleni</p>
+                    <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"> </i>
+                    (0)
+                    </div>
+                    <div style="padding: 4px;">   400.000đ  <span style="text-decoration: line-through;">440.000 đ</span></div>
+                  
+                    
+                    <div class="button_buy" >
+                     <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                  </div>
+                 </div>
+                </div>
+                <div class="item col-3">
+                  <div class="container_img">
+                    <a href="chitiet1sp.html"><img src="./img/product_Destructor.jpg" alt="Destructor" ></a>
+                  </div>  
+                  <div class="describe_product">
+                    <p style="text-align: center;font-size: 20px;">Tôm Destructor</p>
+                    <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    (40)
+                    </div>
+                    <div style="padding: 4px;">   100.000 đ </div>
+                  
+                   
+                    <div class="button_buy" >
+                     <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                  </div>
+                 </div>
+                </div>
+                <div class="item col-3">
+                  <div class="container_img">
+                    <a href="chitiet1sp.html"><img src="./img/Product_Thunderbolt.jpg" alt="Product_Thunderbolt" ></a>
+                  </div>  
+                  <div class="describe_product">
+                    <p style="text-align: center;font-size: 20px;">Tôm Thunderbolt</p>
+                    <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"> </i>
+                    (78)
+                    </div>
+                    <div style="padding: 4px;">   680.000 đ<span style="text-decoration: line-through;">800.000 đ</span></div>
+                  
+                   
+                    <div class="button_buy" >
+                     <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                  </div>
+                 </div>
+                </div>
+               
+              </div>
+              <!-- End :row2 -->    
+              </div>
+
+                </div>
+              </div> 
+              <!-- End:Cua -->
+
+              <!-- Begin :Be ca -->
+              <div id="beca" class="khuyen_mai_hot" style="margin-top: 8px;">
+                <div class="container">
+                    <div class="row " >
+                    <h3 style="color:red;"><i class="fa-solid fa-fire"></i> Bể cá, Phụ kiện</h3>
+                   </div>
+              <div class="row " >
+                    <!--Begin: item1 -->
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href=""><img src="./img/product_BeCaThuySinh.jpg" alt="Bể Cá Thủy Sinh" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Bể cá Thủy Sinh</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> </i>
+                        (89)
+                        </div>
+                        <div style="padding: 4px;">   1.400.000 đ</div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href=""> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                     <!-- End: Item1 -->
+                     <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/product_BeCatreoTuong.jpg" alt="Bể cá treo tường" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Bể cá treo tường 1m2</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"> </i>
+                        (13)
+                        </div>
+                        <div style="padding: 4px;">   1.800.000 đ </div>
+                      
+                        <p class="Giam_25">Giảm 25% khi mua sản phẩm</p>
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/Product_BeCaDeBan.jfif" alt="Bể cá để bàn" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Bể cá để bàn</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        (42)
+                        </div>
+                        <div style="padding: 4px;">   250.000 đ  </div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="item col-3">
+                      <div class="container_img">
+                        <a href="chitiet1sp.html"><img src="./img/Product_MaySui.webp" alt="Máy Sủi Oxy" ></a>
+                      </div>  
+                      <div class="describe_product">
+                        <p style="text-align: center;font-size: 20px;">Máy Sủi Oxy</p>
+                        <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (26)
+                        </div>
+                        <div style="padding: 4px;">   320.000 đ</div>
+                      
+                       
+                        <div class="button_buy" >
+                         <a href="giohang.html"> Thêm vào giỏ hàng</a>
+                      </div>
+                     </div>
+                    </div>
+                   
+              </div>
+
+                </div>
+              </div> 
+               <!-- End :Be ca -->
+
+
+              
+              </div>
+
+              
+              <!-- End :Right -->
+            </div>
+          </div>
+          <!-- End: Product -->
+
+          
+          
+
+        </div>
+                
+                
+            
+        </div>
+        <!-- End :Content -->
+        
+       <!--Begin: Footer -->
+       <div id="footer" class="color-header">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+          <li>
+            
+            <a href="https://www.facebook.com/hhung226/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hungvvvp/"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+         
+        </ul>
+        <ul class="menu-footer">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="lietkesp.html">Dịch vụ</a></li>
+          <li><a href="gioithieuduan.html">Liên hệ</a></li>
+          <li><a href="gioithieuduan.html">Giới thiệu dự án</a></li>
+        </ul>
+        <p>@2023 Hưng </p>
+
+      </div>
+
+        <!-- End:Footer -->
+        </div>
+        
+
+
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
